@@ -1,0 +1,260 @@
+/* -------------------------Обнуление---------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none; }
+  
+  nav, footer, header, aside {
+    display: block; }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  input, button, textarea {
+    font-family: inherit; }
+  
+  input::-ms-clear {
+    display: none; }
+  
+  button {
+    cursor: pointer; }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  
+  a, a:visited {
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul li {
+    list-style: none; }
+  
+  img {
+    vertical-align: top; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit; }
+
+    body {
+        background-color: #0b0c10;
+    }
+    .wrapper{
+        width: 98%;
+        background: url('../img/background/fone.jpg') 100% top no-repeat;
+        background-size: 100% 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ---------------------------HEADER-------------------------------------------- */
+
+    .header {
+        height: 14vh;
+    }
+    .header__logo {
+        color: #66fcf1;
+        font-size: 13vh;
+    }
+
+    /* ---------------------------LINKS-------------------------------------------- */
+    .games__tips{
+      width: 100%;
+      height: 30px;
+      background-color: #FFC100;
+      font-size: 25px;
+      text-align: center;
+      color: #0883c0;
+      
+    }
+    .games__links {
+      width: 19%;
+      height: 380px;
+      margin: 6px;
+      background: #2c3642;
+      top: 0;
+      position: sticky;
+      border:3px solid #000;
+      border-radius: 3%;
+      overflow: hidden;
+    }
+    .links__column {
+      height: 100%;
+      border-left:1px solid #66fcf1;
+    }
+    .links__item {
+      width: 100%;
+      margin: 5px;
+      padding-bottom:4px;
+      border-bottom: 1px solid #191d24;
+    }
+    .link {
+      color: #84CFF5;
+      font-size:20px ;
+      display: inline-block;
+      transition: all 0.5s ease;
+    }
+    .link:hover{
+      transform:translate(10px, 0px);
+    }
+    /* -----------------------------DISCRIPTION---------------------------- */
+
+    .discription{
+      width: 80%;
+      min-height: 200px;
+      background-color: #2c3642;
+      display: flex;
+      position: fixed;
+      top: 15vh;
+      left: 19%;
+      border-radius: 30px;
+      justify-content: center;
+      overflow: hidden;
+      opacity: 0.9;
+    }
+
+  
+    .discription__text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+
+
+    }
+     
+    .discription__plot{
+      width: 80%;
+      font-size: 18px;
+    }
+
+    .discription__img{
+      width: 140px;
+    }
+
+    /* ---------------------------CONTENT--------------------------------------------  */
+
+    .games {
+      width: 100%;
+      display: flex;
+      align-self:flex-start;
+     
+    }
+    .game__iconn{
+      background: 100% center no-repeat;
+      background-size: 100% 100%;
+      height: 8em;
+      width: 8em;
+      color:rgba(0, 0, 0, 0);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+  	-o-transition: all 0.3s linear;
+  	-moz-transition: all 0.3s linear;
+    cursor: pointer;
+    }
+    .game__iconn:hover{
+      transform:scale(1.1);
+     }
+    
+    .games__cotalogs {
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+    }
+    .games__cotalog{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+   /* --------------------------------------PICTURE--------------------------------------------- */
+   .farcry{
+     background-image: url('../img/icons/farcry-icon.png');
+   }
+    .stalcraft {
+      background-image: url('../img/icons/stalcraft-icon-removebg-preview.png');
+      width: 7em;
+    }
+    .stalker {
+      background-image: url('../img/icons/stalker-icon.png');
+    }
+    .hollow_knight {
+      background-image: url('../img/icons/hollow_knight.png');
+    }
+    .factorio {
+      background-image: url('../img/icons/factorio-icon-removebg-preview.png');
+    }
+    .deadcells {
+      background-image: url('../img/icons/dead cells-icon.png');
+    }
+    .chekchers {
+      background-image: url('../img/icons/chekchers-icon-removebg-preview.png');
+      width: 14em;
+    }
+    .chess {
+      background-image: url('../img/icons/lichess-icon-removebg-preview.png');
+      width: 14em;
+    }
+    .minecraft {
+      background-image: url('../img/icons/маенкрафт-removebg-preview.png');
+    }
+    .terraria {
+      background-image: url('../img/icons/unnamed-removebg-preview.png');
+    }
+    .dishonored {
+      background-image: url('../img/icons/изображение_2022-04-02_172904-removebg-preview.png');
+    }
+    .lostplanet {
+      background-image: url('../img/icons/изображение_2022-04-02_172939-removebg-preview.png');
+      width: 14em;
+    }
+    .nearautomata {
+      background-image: url('../img/icons/изображение_2022-04-02_173108-removebg-preview.png');
+    }
+    .cyberpunk {
+      background-image: url('../img/icons/киберпанк.png');
+   }
+ /* ----------------------BLOCKS--------------------------- */
+  .game {
+      width: 15em;
+      height: 20em;
+      color:#fff;
+      word-break:break-all;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ---------------------------FOOTER-------------------------------------------- */
+    .footer {
+      width: 100%;
+      height: 200px;
+      background-color:#45a29f;
+    }
+    .VK{
+      width: 24px;
+      height: 24px;
+    }
